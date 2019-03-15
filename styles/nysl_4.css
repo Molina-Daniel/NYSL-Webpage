@@ -90,10 +90,17 @@ nav a:hover {
 
 section article {
     padding: 15px;
+    line-height: 2;
+    text-align: justify;
 }
 
 article h3 {
-    padding: 20px 0px 15px 20px;
+    padding: 20px 0px 15px 0px;
+}
+
+article p {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .rulesHeading {
@@ -102,6 +109,11 @@ article h3 {
 
 .rulesHeading p {
     margin-top: 30px;
+}
+
+ul, ol {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .divisionLine {
@@ -151,7 +163,10 @@ ol.alpha {
     list-style-type: lower-alpha;
 }
 
+ol, ul {
+    /* text-indent: 1em; */
 
+}
 
 footer {
     background-color: #083e0a;
