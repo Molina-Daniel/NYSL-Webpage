@@ -121,6 +121,10 @@ table {
     padding: 25px 0px;
 }
 
+th {
+    width: 100px;
+}
+
 .alignCenter {
     text-align: center;
 }
