@@ -94,7 +94,7 @@ section article {
     text-align: justify;
 }
 
-article h3 {
+h3 {
     padding: 20px 0px 15px 0px;
 }
 
@@ -114,6 +114,24 @@ article p {
 ul, ol {
     padding-left: 50px;
     padding-right: 50px;
+}
+
+table {
+    text-align: left;
+    padding: 25px 0px;
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.gameParagraphs p {
+    padding: 25px 0px 25px 0px;
+}
+
+.inline {
+    display: flex;
+    justify-content: space-between;
 }
 
 .divisionLine {
@@ -163,11 +181,6 @@ ol.alpha {
     list-style-type: lower-alpha;
 }
 
-ol, ul {
-    /* text-indent: 1em; */
-
-}
-
 footer {
     background-color: #083e0a;
     width: 100%;
@@ -185,4 +198,8 @@ footer a {
 
 .active {
     background-color: #00b806;
+}
+
+.underline {
+    text-decoration: underline;
 }
