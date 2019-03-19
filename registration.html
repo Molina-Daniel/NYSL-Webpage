@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+  <a name="top"></a>
   <div class="wrap">
     <header>
       <div class="logo">
@@ -64,34 +64,35 @@
               <label for="birthDate">Birth Date:</label>
               <input type="date" name="birthday" id="birthDate" required>
 
-              <label for="gender">Gender:</label>
-              <label for="female">Female</label>
-              <input type="radio" name="gender" id="female" value="Female" required="">
+              <p>Gender:</p>
 
-              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="Female" required="">
+              <label class="gender" for="female">Female</label>
+
               <input type="radio" name="gender" id="male" value="Male" required="">
+              <label class="gender" for="male">Male</label>
             </div>
 
-            <div class="formLine">
-              <label for="grade">Grade:</label>
+            <div class="formLine grade">
+              <p>Grade:</p>
 
-              <label for="preSchool">Pre-School</label>
               <input type="radio" name="grade" id="preSchool" value="Pre-School" required>
+              <label for="preSchool">Pre-School</label>
 
-              <label for="1st">1st</label>
               <input type="radio" name="grade" id="1st" value="1st" required>
+              <label for="1st">1st</label>
 
-              <label for="2nd">2nd</label>
               <input type="radio" name="grade" id="2nd" value="2nd" required>
+              <label for="2nd">2nd</label>
 
-              <label for="3rd">3rd</label>
               <input type="radio" name="grade" id="3rd" value="3rd" required>
+              <label for="3rd">3rd</label>
 
-              <label for="4th">4th</label>
               <input type="radio" name="grade" id="4th" value="4th" required>
+              <label for="4th">4th</label>
 
-              <label for="5th">5th</label>
               <input type="radio" name="grade" id="5th" value="5th" required>
+              <label for="5th">5th</label>
             </div>
 
             <div class="formLine">
@@ -388,24 +389,31 @@
             </div>
           </div>
 
-          <div class="formLine">
-            <label for="signature">Parent/Guardian Signature:</label>
-            <input type="text" name="signature" id="signature" required>
+          <fieldset>
+            <legend>Signature:</legend>
+            <div class="formLine paddingTop">
+              <label for="signature">Parent/Guardian Signature:</label>
+              <input type="text" name="signature" id="signature" required>
 
-            <label for="signatureDate">Date:</label>
-            <input type="date" name="signatureDate" id="signatureDate" required>
-          </div>
+              <label for="signatureDate">Date:</label>
+              <input type="date" name="signatureDate" id="signatureDate" required>
+            </div>
+          </fieldset>
 
-          <div class="formLine">
-            <button>Submit</button>
+          <div class="formLine paddingTop50">
+            <button id="submit" type="submit" value="Submit">Submit</button>
+            <button id="reset" type="reset" value="Reset">Reset</button>
           </div>
         </form>
       </div>
     </section>
 
+
+
     <footer>
       <div>
         <a href="rules.html">Rules of Play & Policies</a>
+        <a href="registration.html">Registration Form</a>
       </div>
       <div class="social">
         <a href="">FB</a>
@@ -416,6 +424,7 @@
 
 
   </div>
+  <a id="topButton" href="#top">Top</a>
 
 </body>
 
