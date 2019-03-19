@@ -305,6 +305,7 @@ footer {
     background-color: #083e0a;
     width: 100%;
     padding: 20px;
+    margin-top: 10px;
 
     display: flex;
     justify-content: space-between;
@@ -314,6 +315,10 @@ footer a {
     color: #fff;
     padding: 10px;
     background-color: #b63d06;
+}
+
+.social {
+    width: 15%;
 }
 
 .active {
@@ -348,8 +353,6 @@ footer a {
     padding-left: 10px;
 }
 
-
-
 #submit {
     padding: 20px 40px;
     border: 2px solid gray;
@@ -361,7 +364,7 @@ footer a {
     font-size: 25px;
 }
 
-#submit:hover {background-color: #3e8e41}
+#submit:hover {background-color: #00ff08}
 
 #reset {
     padding: 20px 40px;
@@ -373,6 +376,8 @@ footer a {
     margin: auto;
     font-size: 25px;
 }
+
+#reset:hover {background-color: #ff0808}
 
 #topButton {
     position: fixed;
@@ -387,6 +392,10 @@ footer a {
     padding: 15px;
     border-radius: 10px;
     font-size: 18px; 
+}
+
+.fa-arrow-circle-up {
+    font-size: 30px;
 }
 
 .gender {
@@ -405,4 +414,21 @@ footer a {
     width: 10%;
     align-self: center;
 
+}
+
+.formTable {
+    width: 50%;
+    align-content: center;
+    margin: auto;
+    padding-bottom: 30px;
+    border: 1px solid gray;
+}
+
+.formTable th, .formTable td {
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.gameLocationTable th, .gameLocationTable td {
+    border: 1px solid gray;
 }
