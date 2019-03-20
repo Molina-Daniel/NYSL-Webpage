@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="/styles/nysl_4.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="/scripts/form_validation.js"></script>
   <title>Registration Form</title>
 </head>
 
@@ -38,7 +38,7 @@
       </div>
 
       <div class="formContainer">
-        <form action="show_data.html" method="get">
+        <form id="registrationForm" action="show_data.html" method="get">
           <fieldset>
             <legend>Personal Information:</legend>
             <div class="formLine paddingTop">
@@ -124,35 +124,35 @@
 
                   <div class="firstClosestSchool2 lessSize">
                     <div class="firstClosestSchool3">
-                      <label for="ajKatzenmaier">AJ Katzenmaier</label>
-                      <input type="radio" name="firstClosestSchool" id="ajKatzenmaier" required>
+                      <label for="ajKatzenmaier1">AJ Katzenmaier</label>
+                      <input type="radio" name="firstClosestSchool" id="ajKatzenmaier1" required>
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="greenbay">Greenbay</label>
-                      <input type="radio" name="firstClosestSchool" id="greenbay" required>
+                      <label for="greenbay1">Greenbay</label>
+                      <input type="radio" name="firstClosestSchool" id="greenbay1" required>
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="howardAYeager">Howard A Yeager</label>
-                      <input type="radio" name="firstClosestSchool" id="howardAYeager" required>
+                      <label for="howardAYeager1">Howard A Yeager</label>
+                      <input type="radio" name="firstClosestSchool" id="howardAYeager1" required>
                     </div>
                   </div>
 
                   <div class="firstClosestSchool2 lessSize">
                     <div class="firstClosestSchool3">
-                      <label for="marjoriePHart">Marjorie P Hart</label>
-                      <input type="radio" name="firstClosestSchool" id="marjoriePHart" required>
+                      <label for="marjoriePHart1">Marjorie P Hart</label>
+                      <input type="radio" name="firstClosestSchool" id="marjoriePHart1" required>
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="northElementary">North Elementary</label>
-                      <input type="radio" name="firstClosestSchool" id="northElementary" required>
+                      <label for="northElementary1">North Elementary</label>
+                      <input type="radio" name="firstClosestSchool" id="northElementary1" required>
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="southElementary">South Elementary</label>
-                      <input type="radio" name="firstClosestSchool" id="southElementary">
+                      <label for="southElementary1">South Elementary</label>
+                      <input type="radio" name="firstClosestSchool" id="southElementary1">
                     </div>
                   </div>
                 </div>
@@ -164,35 +164,35 @@
                 <div class="firstClosestSchool1">
                   <div class="firstClosestSchool2 lessSize">
                     <div class="firstClosestSchool3">
-                      <label for="ajKatzenmaier">AJ Katzenmaier</label>
-                      <input type="radio" name="secondClosestSchool" id="ajKatzenmaier" required>
+                      <label for="ajKatzenmaier2">AJ Katzenmaier</label>
+                      <input type="radio" name="secondClosestSchool" id="ajKatzenmaier2" required>
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="greenbay">Greenbay</label>
-                      <input type="radio" name="secondClosestSchool" id="greenbay" required>
+                      <label for="greenbay2">Greenbay</label>
+                      <input type="radio" name="secondClosestSchool" id="greenbay2" required>
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="howardAYeager">Howard A Yeager</label>
-                      <input type="radio" name="secondClosestSchool" id="howardAYeager" required>
+                      <label for="howardAYeager2">Howard A Yeager</label>
+                      <input type="radio" name="secondClosestSchool" id="howardAYeager2" required>
                     </div>
                   </div>
 
                   <div class="firstClosestSchool2 lessSize">
                     <div class="firstClosestSchool3">
-                      <label for="marjoriePHart">Marjorie P Hart</label>
-                      <input type="radio" name="secondClosestSchool" id="marjoriePHart" required>
+                      <label for="marjoriePHart2">Marjorie P Hart</label>
+                      <input type="radio" name="secondClosestSchool" id="marjoriePHart2" required>
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="northElementary">North Elementary</label>
-                      <input type="radio" name="secondClosestSchool" id="northElementary" required>
+                      <label for="northElementary2">North Elementary</label>
+                      <input type="radio" name="secondClosestSchool" id="northElementary2" required>
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="southElementary">South Elementary</label>
-                      <input type="radio" name="secondClosestSchool" id="southElementary">
+                      <label for="southElementary2">South Elementary</label>
+                      <input type="radio" name="secondClosestSchool" id="southElementary2">
                     </div>
                   </div>
                 </div>
@@ -209,25 +209,25 @@
               <div class="firstClosestSchool1">
                 <div class="firstClosestSchool2">
                   <div class="firstClosestSchool3">
-                    <label for="forward">Forward</label>
-                    <input type="checkbox" name="forward" id="forward">
+                    <label for="forwardNormally">Forward</label>
+                    <input type="checkbox" name="forward" id="forwardNormally">
                   </div>
 
                   <div class="firstClosestSchool3">
-                    <label for="defense">Defense</label>
-                    <input type="checkbox" name="defense" id="defense">
+                    <label for="defenseNormally">Defense</label>
+                    <input type="checkbox" name="defense" id="defenseNormally">
                   </div>
                 </div>
 
                 <div class="firstClosestSchool2">
                   <div class="firstClosestSchool3">
-                    <label for="midfield">Midfield</label>
-                    <input type="checkbox" name="midfield" id="midfield">
+                    <label for="midfieldNormally">Midfield</label>
+                    <input type="checkbox" name="midfield" id="midfieldNormally">
                   </div>
 
                   <div class="firstClosestSchool3">
-                    <label for="goalkeeper">Goalkeeper</label>
-                    <input type="checkbox" name="goalkeeper" id="goalkeeper">
+                    <label for="goalkeeperNormally">Goalkeeper</label>
+                    <input type="checkbox" name="goalkeeper" id="goalkeeperNormally">
                   </div>
                 </div>
               </div>
@@ -243,25 +243,25 @@
               <div class="firstClosestSchool1">
                 <div class="firstClosestSchool2">
                   <div class="firstClosestSchool3">
-                    <label for="forward">Forward</label>
-                    <input type="checkbox" name="forward" id="forward">
+                    <label for="forwardWant">Forward</label>
+                    <input type="checkbox" name="forward" id="forwardWant">
                   </div>
 
                   <div class="firstClosestSchool3">
-                    <label for="defense">Defense</label>
-                    <input type="checkbox" name="defense" id="defense">
+                    <label for="defenseWant">Defense</label>
+                    <input type="checkbox" name="defense" id="defenseWant">
                   </div>
                 </div>
 
                 <div class="firstClosestSchool2">
                   <div class="firstClosestSchool3">
-                    <label for="midfield">Midfield</label>
-                    <input type="checkbox" name="midfield" id="midfield">
+                    <label for="midfieldWant">Midfield</label>
+                    <input type="checkbox" name="midfield" id="midfieldWant">
                   </div>
 
                   <div class="firstClosestSchool3">
-                    <label for="goalkeeper">Goalkeeper</label>
-                    <input type="checkbox" name="goalkeeper" id="goalkeeper">
+                    <label for="goalkeeperWant">Goalkeeper</label>
+                    <input type="checkbox" name="goalkeeper" id="goalkeeperWant">
                   </div>
                 </div>
               </div>
@@ -287,40 +287,40 @@
                 <div class="firstClosestSchool1">
                   <div class="firstClosestSchool2 lessSize">
                     <div class="firstClosestSchool3">
-                      <label for="youthSmall">Youth Small</label>
-                      <input type="checkbox" name="jersey" id="youthSmall">
+                      <label for="youthSmallJersey">Youth Small</label>
+                      <input type="checkbox" name="jersey" id="youthSmallJersey">
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="youthMedium">Youth Medium</label>
-                      <input type="checkbox" name="jersey" id="youthMedium">
+                      <label for="youthMediumJersey">Youth Medium</label>
+                      <input type="checkbox" name="jersey" id="youthMediumJersey">
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="youthLarge">Youth Large</label>
-                      <input type="checkbox" name="jersey" id="youthLarge">
+                      <label for="youthLargeJersey">Youth Large</label>
+                      <input type="checkbox" name="jersey" id="youthLargeJersey">
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="small">Small</label>
-                      <input type="checkbox" name="jersey" id="small">
+                      <label for="smallJersey">Small</label>
+                      <input type="checkbox" name="jersey" id="smallJersey">
                     </div>
                   </div>
 
                   <div class="firstClosestSchool2 lessSize">
                     <div class="firstClosestSchool3">
-                      <label for="medium">Medium</label>
-                      <input type="checkbox" name="jersey" id="medium">
+                      <label for="mediumJersey">Medium</label>
+                      <input type="checkbox" name="jersey" id="mediumJersey">
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="large">Large</label>
-                      <input type="checkbox" name="jersey" id="large">
+                      <label for="largeJersey">Large</label>
+                      <input type="checkbox" name="jersey" id="largeJersey">
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="extraLarge">Extra-Large</label>
-                      <input type="checkbox" name="jersey" id="extraLarge">
+                      <label for="extraLargeJersey">Extra-Large</label>
+                      <input type="checkbox" name="jersey" id="extraLargeJersey">
                     </div>
                   </div>
                 </div>
@@ -333,40 +333,40 @@
                 <div class="firstClosestSchool1">
                   <div class="firstClosestSchool2 lessSize">
                     <div class="firstClosestSchool3">
-                      <label for="youthSmall">Youth Small</label>
-                      <input type="checkbox" name="shorts" id="youthSmall">
+                      <label for="youthSmallShorts">Youth Small</label>
+                      <input type="checkbox" name="shorts" id="youthSmallShorts">
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="youthMedium">Youth Medium</label>
-                      <input type="checkbox" name="shorts" id="youthMedium">
+                      <label for="youthMediumShorts">Youth Medium</label>
+                      <input type="checkbox" name="shorts" id="youthMediumShorts">
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="youthLarge">Youth Large</label>
-                      <input type="checkbox" name="shorts" id="youthLarge">
+                      <label for="youthLargeShorts">Youth Large</label>
+                      <input type="checkbox" name="shorts" id="youthLargeShorts">
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="small">Small</label>
-                      <input type="checkbox" name="shorts" id="small">
+                      <label for="smallShorts">Small</label>
+                      <input type="checkbox" name="shorts" id="smallShorts">
                     </div>
                   </div>
 
                   <div class="firstClosestSchool2 lessSize">
                     <div class="firstClosestSchool3">
-                      <label for="medium">Medium</label>
-                      <input type="checkbox" name="shorts" id="medium">
+                      <label for="mediumShorts">Medium</label>
+                      <input type="checkbox" name="shorts" id="mediumShorts">
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="large">Large</label>
-                      <input type="checkbox" name="shorts" id="large">
+                      <label for="largeShorts">Large</label>
+                      <input type="checkbox" name="shorts" id="largeShorts">
                     </div>
 
                     <div class="firstClosestSchool3">
-                      <label for="extraLarge">Extra-Large</label>
-                      <input type="checkbox" name="shorts" id="extraLarge">
+                      <label for="extraLargeShorts">Extra-Large</label>
+                      <input type="checkbox" name="shorts" id="extraLargeShorts">
                     </div>
                   </div>
                 </div>
