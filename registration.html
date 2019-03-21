@@ -8,13 +8,12 @@
   <link rel="stylesheet" href="/styles/nysl_4.css">
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <script src="/scripts/form_validation.js"></script>
   <link rel="icon" href="/img/nysl_logo.png">
   <title>Registration Form</title>
 </head>
 
 <body>
-  <a name="top"></a>
+  <a id="top"></a>
   <div class="wrap">
     <header>
       <div class="logo">
@@ -39,7 +38,7 @@
       </div>
 
       <div class="formContainer">
-        <form id="registrationForm" action="show_data.html" method="get">
+        <form id="registrationForm" class="validate" action="show_data.html" method="get" onsubmit="return validate()" >
           <fieldset>
             <legend>Personal Information:</legend>
             <div class="formLine paddingTop">
@@ -285,7 +284,20 @@
               <fieldset>
                 <legend>Jersey Size:</legend>
 
-                <div class="firstClosestSchool1">
+                <div class="select">
+                  <select name="jersey" id="jersey">
+                    <option value="">Select your size:</option>
+                    <option value="Youth Small">Youth Small</option>
+                    <option value="Youth Medium">Youth Medium</option>
+                    <option value="Youth Large">Youth Large</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="Extra-Large">Extra-Large</option>
+                  </select>
+                </div>
+
+                <!-- <div class="firstClosestSchool1">
                   <div class="firstClosestSchool2 lessSize">
                     <div class="firstClosestSchool3">
                       <label for="youthSmallJersey">Youth Small</label>
@@ -324,14 +336,27 @@
                       <input type="checkbox" name="jersey" id="extraLargeJersey">
                     </div>
                   </div>
-                </div>
+                </div> -->
               </fieldset>
             </div>
             <div class="formBlock">
               <fieldset>
                 <legend>Shorts Size:</legend>
 
-                <div class="firstClosestSchool1">
+                <div class="select">
+                  <select name="shorts" id="shorts">
+                    <option value="">Select your size:</option>
+                    <option value="Youth Small">Youth Small</option>
+                    <option value="Youth Medium">Youth Medium</option>
+                    <option value="Youth Large">Youth Large</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="Extra-Large">Extra-Large</option>
+                  </select>
+                </div>
+
+                <!-- <div class="firstClosestSchool1">
                   <div class="firstClosestSchool2 lessSize">
                     <div class="firstClosestSchool3">
                       <label for="youthSmallShorts">Youth Small</label>
@@ -370,7 +395,7 @@
                       <input type="checkbox" name="shorts" id="extraLargeShorts">
                     </div>
                   </div>
-                </div>
+                </div> -->
               </fieldset>
             </div>
           </div>
@@ -404,8 +429,8 @@
           </fieldset>
 
           <div class="formLine paddingTop50">
-            <button id="submit" type="submit" value="Submit">Submit</button>
-            <button id="reset" type="reset" value="Reset">Reset</button>
+            <input id="submit" type="submit" value="Submit">
+            <input id="reset" type="reset" value="Reset">
           </div>
         </form>
       </div>
@@ -418,6 +443,9 @@
         <a href="rules.html">Rules of Play & Policies</a>
         <a href="registration.html">Registration Form</a>
       </div>
+      <div class="copyright">
+        <p>Made and designed by Daniel Molina © 2019</p>
+      </div>
       <div class="social">
         <a href=""><i class="fab fa-facebook"></i></a>
         <a href=""><i class="fab fa-twitter"></i></a>
@@ -429,6 +457,7 @@
   </div>
   <a id="topButton" href="#top"><i class="fas fa-arrow-circle-up"></i></a>
 
+<script src="/scripts/form_validation.js"></script>
 </body>
 
 </html>

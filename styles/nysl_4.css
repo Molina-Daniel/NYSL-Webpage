@@ -40,6 +40,26 @@ header {
     padding-right: 20px;
 }
 
+header img {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+
+    overflow:hidden;
+}
+
+header:hover img{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg); 
+    -o-transform:rotate(360deg);
+}
+
 header a {
     color: rgb(0, 0, 0);
     width: 100%;
@@ -236,6 +256,11 @@ form div {
     width: 49%;
 }
 
+#birthDate {
+    width: 30%;
+    margin-right: 50px;
+}
+
 .blockSeparation {
     justify-content: space-between;
 }
@@ -267,6 +292,18 @@ form div {
 .firstClosestSchool3 label {
     order: 2;
     width: 70%;
+
+}
+
+.select {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.select select {
+    padding: 5px;
+    width: 60%;
 
 }
 
@@ -309,6 +346,7 @@ footer {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 footer a {
@@ -318,7 +356,18 @@ footer a {
 }
 
 .social {
-    width: 15%;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social a {
+    width: 35px;
+    text-align: center;
+}
+
+.social i {
+    font-size: 20px;
 }
 
 .active {
@@ -355,6 +404,7 @@ footer a {
 
 #submit {
     padding: 20px 40px;
+    width: 200px;
     border: 2px solid gray;
     border-radius: 50%;
     background-color: #00b806;
@@ -368,6 +418,7 @@ footer a {
 
 #reset {
     padding: 20px 40px;
+    width: 200px;
     border: 2px solid gray;
     border-radius: 50%;
     background-color: rgb(155, 0, 0);
