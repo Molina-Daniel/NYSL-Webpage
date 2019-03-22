@@ -54,10 +54,11 @@ header img {
     overflow:hidden;
 }
 
-header:hover img{
-    -webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg); 
-    -o-transform:rotate(360deg);
+header img:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg); 
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 header a {
@@ -69,10 +70,6 @@ header a {
     border: 2px solid black;
     text-align: center;
     border-radius: 50%;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* text-align: center; */
-    /* vertical-align: center; */
 }
 
 nav {
@@ -165,11 +162,6 @@ tr:hover {background-color: rgba(76, 175, 79, 0.493);}
     padding: 25px 0px 25px 0px;
 }
 
-.inline {
-    display: flex;
-    justify-content: space-between;
-}
-
 .divisionLine {
     width: 80%;
     margin-top: 20px;
@@ -228,23 +220,15 @@ form div {
 .formLine {
     display: flex;
     flex: 1 1 auto;
-    /* justify-content: space-between; */
-    /* margin: 0; */
 }
 
 .formLine p, label {
     flex: none;
-    /* display: block; */
     padding: 0px 10px;
-    /* font-weight: bold; */
-    /* width: 100%; */
 }
 
 .formLine input {
     width: 100%;
-    /* flex: none; */
-    /* padding-right: 10px; */
-
 }
 
 .grade input {
@@ -267,7 +251,6 @@ form div {
 
 .firstClosestSchool1 {
     display: flex;
-    /* align-items: center; */
     padding: 15px 0px 0px 0px;
 }
 
@@ -292,7 +275,6 @@ form div {
 .firstClosestSchool3 label {
     order: 2;
     width: 70%;
-
 }
 
 .select {
@@ -409,7 +391,6 @@ footer a {
     border-radius: 50%;
     background-color: #00b806;
     cursor: pointer;
-    /* align-self: center; */
     margin: auto;
     font-size: 25px;
 }
@@ -423,7 +404,6 @@ footer a {
     border-radius: 50%;
     background-color: rgb(155, 0, 0);
     cursor: pointer;
-    /* align-self: center; */
     margin: auto;
     font-size: 25px;
 }
@@ -451,14 +431,12 @@ footer a {
 
 .gender {
     align-self: center;
-    /* padding-right: 15px; */
     padding-left: 0px;
 }
 
 #female {
     width: 10%;
     align-self: center;
-    /* margin-left: 50px; */
 }
 
 #male {
